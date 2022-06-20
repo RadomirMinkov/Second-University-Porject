@@ -1,0 +1,226 @@
+\hypertarget{class_line}{}\doxysection{Line Class Reference}
+\label{class_line}\index{Line@{Line}}
+
+
+class line which is derived from the base class shape  
+
+
+
+
+{\ttfamily \#include $<$Line.\+h$>$}
+
+Inheritance diagram for Line\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_line}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_line_a79268a50a5df21a7e4052e06b25ea0de}{Line}} ()=default
+\begin{DoxyCompactList}\small\item\em public properties \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_line_a9bb6b1dc86a6f578446d71e9eaf41c92}\label{class_line_a9bb6b1dc86a6f578446d71e9eaf41c92}} 
+{\bfseries Line} (\mbox{\hyperlink{class_point}{Point}} \+\_\+begin, \mbox{\hyperlink{class_point}{Point}} \+\_\+end, \mbox{\hyperlink{class_my_string}{My\+String}} \+\_\+stroke, unsigned \+\_\+stroke\+Width)
+\begin{DoxyCompactList}\small\item\em constructor with parameters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_line_af18447238883377a0071d2276a4ac0a5}\label{class_line_af18447238883377a0071d2276a4ac0a5}} 
+{\bfseries $\sim$\+Line} () override
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_line}{Line}} $\ast$ \mbox{\hyperlink{class_line_adc9e49bd356423a7b455b93513733bfc}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em function that returns a new instance of the line \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_line_a908b142ba4a17102326274ffcd83d3b4}\label{class_line_a908b142ba4a17102326274ffcd83d3b4}} 
+double {\bfseries length} () const
+\begin{DoxyCompactList}\small\item\em return the length of the line \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_line_ab4862f5b47c3f4ccf1fb79cd92bb9575}\label{class_line_ab4862f5b47c3f4ccf1fb79cd92bb9575}} 
+\mbox{\hyperlink{class_point}{Point}} {\bfseries get\+Begin} () const
+\begin{DoxyCompactList}\small\item\em return the begining point \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_line_a5e7cf751e6a49bae294c1d55160f6f5d}\label{class_line_a5e7cf751e6a49bae294c1d55160f6f5d}} 
+\mbox{\hyperlink{class_point}{Point}} {\bfseries get\+End} () const
+\item 
+\mbox{\Hypertarget{class_line_a39440216d34441aadcf1a51e3a06502e}\label{class_line_a39440216d34441aadcf1a51e3a06502e}} 
+\mbox{\hyperlink{class_my_string}{My\+String}} {\bfseries get\+Stroke} () const
+\begin{DoxyCompactList}\small\item\em returns the stroke of the line \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_line_a3c455c98a0386baaec358256b0590d2a}{print}} (std\+::ostream \&=std\+::cout) const override
+\begin{DoxyCompactList}\small\item\em printing the line with its properties \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_line_a2f5c01332375586f2a936d3672b40c0b}{println}} (std\+::ostream \&=std\+::cout) const override
+\begin{DoxyCompactList}\small\item\em printing the properties of the line with a new line \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_line_a1a62d4fbc10235f04ca26e890a9271ce}{translate}} (int, int) override
+\begin{DoxyCompactList}\small\item\em translates the line \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_line_a7a88506c38fcd0b73f9a076abce8c5fe}{within\+Rectangle}} (\mbox{\hyperlink{class_rectangle}{Rectangle}} const \&region) const override
+\begin{DoxyCompactList}\small\item\em checks if the line is within a rectangle \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_line_a7477b69cc2683a2735222c0b5364acd6}{within\+Circle}} (\mbox{\hyperlink{class_circle}{Circle}} const \&region) const override
+\begin{DoxyCompactList}\small\item\em checks if the line is within a circle \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_line_ac725e645e6ed0166a16075ad2462936e}{read\+From\+Text}} (std\+::fstream \&in)
+\begin{DoxyCompactList}\small\item\em function that reads a line form a file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_line_ab83d1a8c847deaa58569b893e74e0dbf}{write\+To\+Text}} (std\+::fstream \&out)
+\begin{DoxyCompactList}\small\item\em function writing to a text file \end{DoxyCompactList}\item 
+Shape\+Type \mbox{\hyperlink{class_line_adf0e49781ed4acc34be3324562cf8f7b}{get\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em returns the type of the shape \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_my_string}{My\+String}} \mbox{\hyperlink{class_line_adc9112149c1c481b89b193b04d7db182}{get\+Shape}} () const override
+\begin{DoxyCompactList}\small\item\em return the type but with a string \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+class line which is derived from the base class shape 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_line_a79268a50a5df21a7e4052e06b25ea0de}\label{class_line_a79268a50a5df21a7e4052e06b25ea0de}} 
+\index{Line@{Line}!Line@{Line}}
+\index{Line@{Line}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{Line()}{Line()}}
+{\footnotesize\ttfamily Line\+::\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+public properties 
+
+default constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_line_adc9e49bd356423a7b455b93513733bfc}\label{class_line_adc9e49bd356423a7b455b93513733bfc}} 
+\index{Line@{Line}!clone@{clone}}
+\index{clone@{clone}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_line}{Line}} $\ast$ Line\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+function that returns a new instance of the line 
+
+
+
+Implements \mbox{\hyperlink{class_shape_a335a0e50e3ccba60c7e6751d0aede2b9}{Shape}}.
+
+\mbox{\Hypertarget{class_line_adc9112149c1c481b89b193b04d7db182}\label{class_line_adc9112149c1c481b89b193b04d7db182}} 
+\index{Line@{Line}!getShape@{getShape}}
+\index{getShape@{getShape}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{getShape()}{getShape()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_my_string}{My\+String}} Line\+::get\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+return the type but with a string 
+
+
+
+Implements \mbox{\hyperlink{class_shape_ae5a877ad74b9c9d3eed55a1ec5115700}{Shape}}.
+
+\mbox{\Hypertarget{class_line_adf0e49781ed4acc34be3324562cf8f7b}\label{class_line_adf0e49781ed4acc34be3324562cf8f7b}} 
+\index{Line@{Line}!getType@{getType}}
+\index{getType@{getType}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily Shape\+Type Line\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+returns the type of the shape 
+
+
+
+Implements \mbox{\hyperlink{class_shape_a1a4b4fa6764bc94365fec828de08d667}{Shape}}.
+
+\mbox{\Hypertarget{class_line_a3c455c98a0386baaec358256b0590d2a}\label{class_line_a3c455c98a0386baaec358256b0590d2a}} 
+\index{Line@{Line}!print@{print}}
+\index{print@{print}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Line\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out = {\ttfamily std\+:\+:cout} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+printing the line with its properties 
+
+
+
+Implements \mbox{\hyperlink{class_shape_a0001207a3f1c482185583d98331bea51}{Shape}}.
+
+\mbox{\Hypertarget{class_line_a2f5c01332375586f2a936d3672b40c0b}\label{class_line_a2f5c01332375586f2a936d3672b40c0b}} 
+\index{Line@{Line}!println@{println}}
+\index{println@{println}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{println()}{println()}}
+{\footnotesize\ttfamily void Line\+::println (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out = {\ttfamily std\+:\+:cout} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+printing the properties of the line with a new line 
+
+
+
+Implements \mbox{\hyperlink{class_shape_ad2426b19b1b2dd78a8940489c9e0b9f9}{Shape}}.
+
+\mbox{\Hypertarget{class_line_ac725e645e6ed0166a16075ad2462936e}\label{class_line_ac725e645e6ed0166a16075ad2462936e}} 
+\index{Line@{Line}!readFromText@{readFromText}}
+\index{readFromText@{readFromText}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{readFromText()}{readFromText()}}
+{\footnotesize\ttfamily void Line\+::read\+From\+Text (\begin{DoxyParamCaption}\item[{std\+::fstream \&}]{in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+function that reads a line form a file 
+
+
+
+Implements \mbox{\hyperlink{class_shape_a89f67f3b86d9c9cc0c65b991b96ac887}{Shape}}.
+
+\mbox{\Hypertarget{class_line_a1a62d4fbc10235f04ca26e890a9271ce}\label{class_line_a1a62d4fbc10235f04ca26e890a9271ce}} 
+\index{Line@{Line}!translate@{translate}}
+\index{translate@{translate}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily void Line\+::translate (\begin{DoxyParamCaption}\item[{int}]{vertical,  }\item[{int}]{horizontal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+translates the line 
+
+
+
+Implements \mbox{\hyperlink{class_shape_a6af33fdc8e116c18218369a4ea33d18f}{Shape}}.
+
+\mbox{\Hypertarget{class_line_a7477b69cc2683a2735222c0b5364acd6}\label{class_line_a7477b69cc2683a2735222c0b5364acd6}} 
+\index{Line@{Line}!withinCircle@{withinCircle}}
+\index{withinCircle@{withinCircle}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{withinCircle()}{withinCircle()}}
+{\footnotesize\ttfamily bool Line\+::within\+Circle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_circle}{Circle}} const \&}]{region }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+checks if the line is within a circle 
+
+
+
+Implements \mbox{\hyperlink{class_shape_aeda73185b10fd8f9c32828cc440c4955}{Shape}}.
+
+\mbox{\Hypertarget{class_line_a7a88506c38fcd0b73f9a076abce8c5fe}\label{class_line_a7a88506c38fcd0b73f9a076abce8c5fe}} 
+\index{Line@{Line}!withinRectangle@{withinRectangle}}
+\index{withinRectangle@{withinRectangle}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{withinRectangle()}{withinRectangle()}}
+{\footnotesize\ttfamily bool Line\+::within\+Rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rectangle}{Rectangle}} const \&}]{region }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+checks if the line is within a rectangle 
+
+
+
+Implements \mbox{\hyperlink{class_shape_a7d0e84c0eb31aea5c7f5c8fa8103c35c}{Shape}}.
+
+\mbox{\Hypertarget{class_line_ab83d1a8c847deaa58569b893e74e0dbf}\label{class_line_ab83d1a8c847deaa58569b893e74e0dbf}} 
+\index{Line@{Line}!writeToText@{writeToText}}
+\index{writeToText@{writeToText}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{writeToText()}{writeToText()}}
+{\footnotesize\ttfamily void Line\+::write\+To\+Text (\begin{DoxyParamCaption}\item[{std\+::fstream \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+function writing to a text file 
+
+
+
+Implements \mbox{\hyperlink{class_shape_ab759e631a02a3f141a35ba94a6a9c01a}{Shape}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Second-\/\+Project/\+Second\+Project/Line.\+h\item 
+Second-\/\+Project/\+Second\+Project/Line.\+cpp\end{DoxyCompactItemize}

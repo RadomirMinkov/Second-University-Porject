@@ -1,0 +1,33 @@
+\hypertarget{_point_8h_source}{}\doxysection{Point.\+h}
+\label{_point_8h_source}\index{Second-\/Project/SecondProject/Point.h@{Second-\/Project/SecondProject/Point.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_POINT\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_POINT\_HPP}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{keyword}{class }\mbox{\hyperlink{class_point}{Point}}}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7     \textcolor{comment}{//private properties}}
+\DoxyCodeLine{8 \textcolor{keyword}{private}:}
+\DoxyCodeLine{10     \textcolor{keywordtype}{float} X;}
+\DoxyCodeLine{12     \textcolor{keywordtype}{float} Y;}
+\DoxyCodeLine{13     \textcolor{comment}{//public properties}}
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_point_abc14bf4a7fbcc44185171850a2e319da}{Point}}(\textcolor{keywordtype}{float} X = 0, \textcolor{keywordtype}{float} Y = 0);}
+\DoxyCodeLine{18     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_point_a2fb6796674ff545dd48ea6f86ab55f5f}{print}}(std::ostream\& out=std::cout) \textcolor{keyword}{const};}
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_point_a5da87760efde46a0e24f045f10fa20ed}{println}}(std::ostream\& out = std::cout)\textcolor{keyword}{const};}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_point_a9ba30ac56772a308d6f1d8ddb4ce2879}{setX}}(\textcolor{keywordtype}{float} \_X);}
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_point_ae7ce78537b68f0a8d82a41aef81eb4bf}{setY}}(\textcolor{keywordtype}{float} \_Y);}
+\DoxyCodeLine{26     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_point_acc52c4777eed1bc00fe7b1de9ca7fb5e}{operator==}}(\mbox{\hyperlink{class_point}{Point}} \textcolor{keyword}{const}\& other)\textcolor{keyword}{const};}
+\DoxyCodeLine{28     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_point_aec319a4ae33c7eae44c63b85f6168205}{operator!=}}(\mbox{\hyperlink{class_point}{Point}} \textcolor{keyword}{const}\& other)\textcolor{keyword}{const};}
+\DoxyCodeLine{30     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_point_a2371ffadbe245d12a8f556d0a976521b}{getY}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} Y;\}}
+\DoxyCodeLine{32     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_point_a29c44ec7c7279e02629645a06cdaf7d5}{getX}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} X; \}}
+\DoxyCodeLine{34     \textcolor{keyword}{friend} std::istream\& \mbox{\hyperlink{class_point_a78759d81258d3e4c4041d1c043620227}{operator>>}}(std::istream\& in,\mbox{\hyperlink{class_point}{Point}}\& other);}
+\DoxyCodeLine{35 \};}
+\DoxyCodeLine{37 std::ostream\& operator<<(std::ostream\& out, \mbox{\hyperlink{class_point}{Point}} \textcolor{keyword}{const}\& other);}
+\DoxyCodeLine{38 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !\_POINT\_HPP}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 }
+
+\end{DoxyCode}

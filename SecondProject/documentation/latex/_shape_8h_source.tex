@@ -1,0 +1,40 @@
+\hypertarget{_shape_8h_source}{}\doxysection{Shape.\+h}
+\label{_shape_8h_source}\index{Second-\/Project/SecondProject/Shape.h@{Second-\/Project/SecondProject/Shape.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_SHAPE\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_SHAPE\_HPP}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Types.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}Point.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}MyString.h"{}}}
+\DoxyCodeLine{12 \textcolor{keyword}{enum class} ShapeType}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     rectangle=1,}
+\DoxyCodeLine{15     circle=2,}
+\DoxyCodeLine{16     line=3}
+\DoxyCodeLine{17 \};  }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{class_shape}{Shape}}}
+\DoxyCodeLine{20 \{}
+\DoxyCodeLine{22 \textcolor{keyword}{private}:}
+\DoxyCodeLine{24 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{30     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_shape_abba973c4b6bfe05fdcd0e79379e5a7de}{getDistance}}(\mbox{\hyperlink{class_point}{Point}}, \mbox{\hyperlink{class_point}{Point}})\textcolor{keyword}{const};}
+\DoxyCodeLine{31 \textcolor{keyword}{public}:}
+\DoxyCodeLine{33     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_shape_ac3b9fc48965274893f25b18aa14ba665}{\string~Shape}}() \{\};}
+\DoxyCodeLine{35     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_shape}{Shape}}* \mbox{\hyperlink{class_shape_a335a0e50e3ccba60c7e6751d0aede2b9}{clone}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{37     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void}  \mbox{\hyperlink{class_shape_a0001207a3f1c482185583d98331bea51}{print}}(std::ostream\& = std::cout)\textcolor{keyword}{const}=0;}
+\DoxyCodeLine{39     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shape_ad2426b19b1b2dd78a8940489c9e0b9f9}{println}}(std::ostream\& = std::cout)\textcolor{keyword}{const}=0;}
+\DoxyCodeLine{41     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shape_a6af33fdc8e116c18218369a4ea33d18f}{translate}}(\textcolor{keywordtype}{int},\textcolor{keywordtype}{int})=0;y}
+\DoxyCodeLine{49     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_shape_a7d0e84c0eb31aea5c7f5c8fa8103c35c}{withinRectangle}}(\mbox{\hyperlink{class_rectangle}{Rectangle}} \textcolor{keyword}{const}\& region)\textcolor{keyword}{const}=0;}
+\DoxyCodeLine{57     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_shape_aeda73185b10fd8f9c32828cc440c4955}{withinCircle}}(\mbox{\hyperlink{class_circle}{Circle}} \textcolor{keyword}{const}\& region)\textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{59     \textcolor{keyword}{virtual} ShapeType \mbox{\hyperlink{class_shape_a1a4b4fa6764bc94365fec828de08d667}{getType}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{61     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_my_string}{MyString}} \mbox{\hyperlink{class_shape_ae5a877ad74b9c9d3eed55a1ec5115700}{getShape}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{63     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shape_a89f67f3b86d9c9cc0c65b991b96ac887}{readFromText}}(std::fstream\& in)=0;}
+\DoxyCodeLine{65     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_shape_ab759e631a02a3f141a35ba94a6a9c01a}{writeToText}}(std::fstream\& out) = 0;}
+\DoxyCodeLine{66 \};}
+\DoxyCodeLine{67 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !\_SHAPE\_HPP}}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 }
+
+\end{DoxyCode}

@@ -1,0 +1,38 @@
+\hypertarget{_linked_stack_8h_source}{}\doxysection{Linked\+Stack.\+h}
+\label{_linked_stack_8h_source}\index{Second-\/Project/SecondProject/LinkedStack.h@{Second-\/Project/SecondProject/LinkedStack.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_LINKEDSTACK\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_LINKEDSTACK\_HPP}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <stdexcept>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <exception>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}MyString.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}MyVector.h"{}}}
+\DoxyCodeLine{9 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_stack_element}{StackElement}}}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{12     \mbox{\hyperlink{class_my_string}{MyString}} \mbox{\hyperlink{struct_stack_element_a51b4349ec770c66dec5ec8f5ac1bfc97}{data}};}
+\DoxyCodeLine{14     \mbox{\hyperlink{struct_stack_element}{StackElement}}* \mbox{\hyperlink{struct_stack_element_aeef592a6aeaf0728a899d357adb70b2d}{next}};}
+\DoxyCodeLine{15 \};}
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{class_linked_stack}{LinkedStack}}}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{20 \textcolor{keyword}{private}:}
+\DoxyCodeLine{22     \mbox{\hyperlink{struct_stack_element}{StackElement}}* top;}
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} copy(\mbox{\hyperlink{class_linked_stack}{LinkedStack}} \textcolor{keyword}{const}\& other);}
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} clear();}
+\DoxyCodeLine{28 \textcolor{keyword}{public}:}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_linked_stack_a348acdaed4f288d2fbb3dd7e7a55fa5f}{LinkedStack}}();}
+\DoxyCodeLine{32     \mbox{\hyperlink{class_linked_stack_a348acdaed4f288d2fbb3dd7e7a55fa5f}{LinkedStack}}(\mbox{\hyperlink{class_linked_stack}{LinkedStack}} \textcolor{keyword}{const}\& other);}
+\DoxyCodeLine{34     \mbox{\hyperlink{class_linked_stack}{LinkedStack}}\& \mbox{\hyperlink{class_linked_stack_a53cc154f8c5f4806cb21b391aaddd0c8}{operator=}}(\mbox{\hyperlink{class_linked_stack}{LinkedStack}} \textcolor{keyword}{const}\& other);}
+\DoxyCodeLine{36     \mbox{\hyperlink{class_linked_stack_ab2fdb20d8918bf824e50a9038acef636}{\string~LinkedStack}}();}
+\DoxyCodeLine{38     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_linked_stack_a3d7c6cecc4d54694eb564963eae2242e}{isEmpty}}()\textcolor{keyword}{const} \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{40     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_linked_stack_a7ba07d866f0b80f874ed9d6a7cb6a3a6}{push}}(\mbox{\hyperlink{class_my_string}{MyString}} \textcolor{keyword}{const}\& element);}
+\DoxyCodeLine{42     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_linked_stack_a8269373789515b446fa69d9c9741f546}{peek}}(\mbox{\hyperlink{class_my_string}{MyString}}\& element)\textcolor{keyword}{const} ;}
+\DoxyCodeLine{44     \mbox{\hyperlink{class_my_string}{MyString}} \mbox{\hyperlink{class_linked_stack_aa1d9c62107175f67d6ceeac6d98bac31}{pop}}();}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \};}
+\DoxyCodeLine{47 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !\_LINKEDSTACK\_HPP}}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 }
+
+\end{DoxyCode}

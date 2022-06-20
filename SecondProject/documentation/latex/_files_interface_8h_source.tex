@@ -1,0 +1,31 @@
+\hypertarget{_files_interface_8h_source}{}\doxysection{Files\+Interface.\+h}
+\label{_files_interface_8h_source}\index{Second-\/Project/SecondProject/FilesInterface.h@{Second-\/Project/SecondProject/FilesInterface.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_FILEINTERFACE\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_FILEINTERFACE\_HPP}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Types.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}Container.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}Constants.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}LinkedStack.h"{}}}
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_files_interface}{FilesInterface}}}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{13 \textcolor{keyword}{private}:}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_my_string}{MyString}} firstLine;}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_my_string}{MyString}} secondLine;}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_my_string}{MyString}} thirdLine;}
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{23     \mbox{\hyperlink{class_files_interface_aab505641e43d0c2f710a31c3d2240915}{FilesInterface}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{25     \mbox{\hyperlink{class_files_interface_a30169e47b919b4a17a41fc8292c8667b}{FilesInterface}}(\mbox{\hyperlink{class_files_interface}{FilesInterface}} \textcolor{keyword}{const}\& other) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_files_interface}{FilesInterface}}\& \mbox{\hyperlink{class_files_interface_a589bb4331728d7d8e66478df30eb1ae3}{operator=}}(\mbox{\hyperlink{class_files_interface}{FilesInterface}} \textcolor{keyword}{const}\& other) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_files_interface_a209b8d177fa1d91cdd2866d5f90d17b4}{readFromFile}}(std::fstream\& in, \mbox{\hyperlink{class_container}{Container}}\& container);}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_files_interface_ad3a5e97457fadd0ed652c3ddde4b4ba2}{writeToFile}}(std::fstream\& out, \mbox{\hyperlink{class_container}{Container}} \textcolor{keyword}{const}\& container) \textcolor{keyword}{const};}
+\DoxyCodeLine{32 \};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !\_FILEINTERFACE\_HPP}}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 }
+
+\end{DoxyCode}

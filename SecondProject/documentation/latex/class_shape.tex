@@ -1,0 +1,237 @@
+\hypertarget{class_shape}{}\doxysection{Shape Class Reference}
+\label{class_shape}\index{Shape@{Shape}}
+
+
+base abstract class \mbox{\hyperlink{class_shape}{Shape}}  
+
+
+
+
+{\ttfamily \#include $<$Shape.\+h$>$}
+
+Inheritance diagram for Shape\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_shape}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_shape_ac3b9fc48965274893f25b18aa14ba665}\label{class_shape_ac3b9fc48965274893f25b18aa14ba665}} 
+virtual {\bfseries $\sim$\+Shape} ()
+\begin{DoxyCompactList}\small\item\em virtual destructor \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_shape}{Shape}} $\ast$ \mbox{\hyperlink{class_shape_a335a0e50e3ccba60c7e6751d0aede2b9}{clone}} () const =0
+\begin{DoxyCompactList}\small\item\em virtual fucntion clone that makes a copy \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_shape_a0001207a3f1c482185583d98331bea51}{print}} (std\+::ostream \&=std\+::cout) const =0
+\begin{DoxyCompactList}\small\item\em virtual fucntion for printing the object \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_shape_ad2426b19b1b2dd78a8940489c9e0b9f9}{println}} (std\+::ostream \&=std\+::cout) const =0
+\begin{DoxyCompactList}\small\item\em print but witha new line \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_shape_a6af33fdc8e116c18218369a4ea33d18f}{translate}} (int, int)=0
+\begin{DoxyCompactList}\small\item\em virtual function that translates the shape \end{DoxyCompactList}\item 
+virtual y bool \mbox{\hyperlink{class_shape_a7d0e84c0eb31aea5c7f5c8fa8103c35c}{within\+Rectangle}} (\mbox{\hyperlink{class_rectangle}{Rectangle}} const \&region) const =0
+\begin{DoxyCompactList}\small\item\em checks if a shape is inside rectangle \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_shape_aeda73185b10fd8f9c32828cc440c4955}{within\+Circle}} (\mbox{\hyperlink{class_circle}{Circle}} const \&region) const =0
+\begin{DoxyCompactList}\small\item\em checks if a shape is inside a circle \end{DoxyCompactList}\item 
+virtual Shape\+Type \mbox{\hyperlink{class_shape_a1a4b4fa6764bc94365fec828de08d667}{get\+Type}} () const =0
+\begin{DoxyCompactList}\small\item\em gets you the type of the shape \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_my_string}{My\+String}} \mbox{\hyperlink{class_shape_ae5a877ad74b9c9d3eed55a1ec5115700}{get\+Shape}} () const =0
+\begin{DoxyCompactList}\small\item\em gets you the type in a string \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_shape_a89f67f3b86d9c9cc0c65b991b96ac887}{read\+From\+Text}} (std\+::fstream \&in)=0
+\begin{DoxyCompactList}\small\item\em reads a shape form a text file \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_shape_ab759e631a02a3f141a35ba94a6a9c01a}{write\+To\+Text}} (std\+::fstream \&out)=0
+\begin{DoxyCompactList}\small\item\em writes a shape to a text file \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_shape_abba973c4b6bfe05fdcd0e79379e5a7de}{get\+Distance}} (\mbox{\hyperlink{class_point}{Point}}, \mbox{\hyperlink{class_point}{Point}}) const
+\begin{DoxyCompactList}\small\item\em private properties \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+base abstract class \mbox{\hyperlink{class_shape}{Shape}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_shape_a335a0e50e3ccba60c7e6751d0aede2b9}\label{class_shape_a335a0e50e3ccba60c7e6751d0aede2b9}} 
+\index{Shape@{Shape}!clone@{clone}}
+\index{clone@{clone}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_shape}{Shape}} $\ast$ Shape\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+virtual fucntion clone that makes a copy 
+
+
+
+Implemented in \mbox{\hyperlink{class_circle_a944e8bf4111ee2bbcf3159d570d5d38e}{Circle}}, \mbox{\hyperlink{class_line_adc9e49bd356423a7b455b93513733bfc}{Line}}, and \mbox{\hyperlink{class_rectangle_aac57eacc95bf6ff125196b14f91177f9}{Rectangle}}.
+
+\mbox{\Hypertarget{class_shape_abba973c4b6bfe05fdcd0e79379e5a7de}\label{class_shape_abba973c4b6bfe05fdcd0e79379e5a7de}} 
+\index{Shape@{Shape}!getDistance@{getDistance}}
+\index{getDistance@{getDistance}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{getDistance()}{getDistance()}}
+{\footnotesize\ttfamily double Shape\+::get\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{\+\_\+begin,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{\+\_\+end }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+private properties 
+
+protected properties
+
+gets you the distance between two points
+
+\begin{DoxyReturn}{Returns}
+double return the distnace as double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_shape_ae5a877ad74b9c9d3eed55a1ec5115700}\label{class_shape_ae5a877ad74b9c9d3eed55a1ec5115700}} 
+\index{Shape@{Shape}!getShape@{getShape}}
+\index{getShape@{getShape}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{getShape()}{getShape()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_my_string}{My\+String}} Shape\+::get\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+gets you the type in a string 
+
+
+
+Implemented in \mbox{\hyperlink{class_circle_a20b766d99f3c528dc25f0eedf880332a}{Circle}}, \mbox{\hyperlink{class_line_adc9112149c1c481b89b193b04d7db182}{Line}}, and \mbox{\hyperlink{class_rectangle_a8f67bb5076f6212e1aa5b17af0065c27}{Rectangle}}.
+
+\mbox{\Hypertarget{class_shape_a1a4b4fa6764bc94365fec828de08d667}\label{class_shape_a1a4b4fa6764bc94365fec828de08d667}} 
+\index{Shape@{Shape}!getType@{getType}}
+\index{getType@{getType}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily virtual Shape\+Type Shape\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+gets you the type of the shape 
+
+
+
+Implemented in \mbox{\hyperlink{class_circle_ac0011f37536563396471cbcce8438080}{Circle}}, \mbox{\hyperlink{class_line_adf0e49781ed4acc34be3324562cf8f7b}{Line}}, and \mbox{\hyperlink{class_rectangle_ac7d574e4a0db27e08ad7b719d8140c62}{Rectangle}}.
+
+\mbox{\Hypertarget{class_shape_a0001207a3f1c482185583d98331bea51}\label{class_shape_a0001207a3f1c482185583d98331bea51}} 
+\index{Shape@{Shape}!print@{print}}
+\index{print@{print}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily virtual void Shape\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ = {\ttfamily std\+:\+:cout} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+virtual fucntion for printing the object 
+
+
+
+Implemented in \mbox{\hyperlink{class_circle_a15eeaa201d44524667efa690e1a74297}{Circle}}, \mbox{\hyperlink{class_line_a3c455c98a0386baaec358256b0590d2a}{Line}}, and \mbox{\hyperlink{class_rectangle_acbc0a3dfa07d2e7509ced4ad24aaa0e0}{Rectangle}}.
+
+\mbox{\Hypertarget{class_shape_ad2426b19b1b2dd78a8940489c9e0b9f9}\label{class_shape_ad2426b19b1b2dd78a8940489c9e0b9f9}} 
+\index{Shape@{Shape}!println@{println}}
+\index{println@{println}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{println()}{println()}}
+{\footnotesize\ttfamily virtual void Shape\+::println (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ = {\ttfamily std\+:\+:cout} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+print but witha new line 
+
+
+
+Implemented in \mbox{\hyperlink{class_line_a2f5c01332375586f2a936d3672b40c0b}{Line}}, \mbox{\hyperlink{class_circle_ae54452c45d68c9c1e15190117f0e43b0}{Circle}}, and \mbox{\hyperlink{class_rectangle_a3c6abc025b177e38bd3e89cba466acf8}{Rectangle}}.
+
+\mbox{\Hypertarget{class_shape_a89f67f3b86d9c9cc0c65b991b96ac887}\label{class_shape_a89f67f3b86d9c9cc0c65b991b96ac887}} 
+\index{Shape@{Shape}!readFromText@{readFromText}}
+\index{readFromText@{readFromText}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{readFromText()}{readFromText()}}
+{\footnotesize\ttfamily virtual void Shape\+::read\+From\+Text (\begin{DoxyParamCaption}\item[{std\+::fstream \&}]{in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+reads a shape form a text file 
+
+
+
+Implemented in \mbox{\hyperlink{class_circle_a0695ba839a32f357d70dcaa0083c5c38}{Circle}}, \mbox{\hyperlink{class_line_ac725e645e6ed0166a16075ad2462936e}{Line}}, and \mbox{\hyperlink{class_rectangle_a5d57b909369f7a3f147894fdc3957e70}{Rectangle}}.
+
+\mbox{\Hypertarget{class_shape_a6af33fdc8e116c18218369a4ea33d18f}\label{class_shape_a6af33fdc8e116c18218369a4ea33d18f}} 
+\index{Shape@{Shape}!translate@{translate}}
+\index{translate@{translate}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily virtual void Shape\+::translate (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+virtual function that translates the shape 
+
+
+
+Implemented in \mbox{\hyperlink{class_rectangle_aebdaa0a0ec4008e67f800d0a7a5b854f}{Rectangle}}, \mbox{\hyperlink{class_circle_a96c46d3192f592c23d0774af4e30d4a8}{Circle}}, and \mbox{\hyperlink{class_line_a1a62d4fbc10235f04ca26e890a9271ce}{Line}}.
+
+\mbox{\Hypertarget{class_shape_aeda73185b10fd8f9c32828cc440c4955}\label{class_shape_aeda73185b10fd8f9c32828cc440c4955}} 
+\index{Shape@{Shape}!withinCircle@{withinCircle}}
+\index{withinCircle@{withinCircle}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{withinCircle()}{withinCircle()}}
+{\footnotesize\ttfamily virtual bool Shape\+::within\+Circle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_circle}{Circle}} const \&}]{region }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+checks if a shape is inside a circle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em region} & the region in which the shape should be \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true is within 
+
+false is not within 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_circle_ad77f3df335f744d84296d26b6749cfce}{Circle}}, \mbox{\hyperlink{class_line_a7477b69cc2683a2735222c0b5364acd6}{Line}}, and \mbox{\hyperlink{class_rectangle_af66a96b4d561816cbd9efed3ffe500aa}{Rectangle}}.
+
+\mbox{\Hypertarget{class_shape_a7d0e84c0eb31aea5c7f5c8fa8103c35c}\label{class_shape_a7d0e84c0eb31aea5c7f5c8fa8103c35c}} 
+\index{Shape@{Shape}!withinRectangle@{withinRectangle}}
+\index{withinRectangle@{withinRectangle}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{withinRectangle()}{withinRectangle()}}
+{\footnotesize\ttfamily virtual y bool Shape\+::within\+Rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rectangle}{Rectangle}} const \&}]{region }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+checks if a shape is inside rectangle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em region} & the region in which the shape should be \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true is within 
+
+false is not within 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_circle_af9d9b5b3b4a9e5ac6039a22a43953516}{Circle}}, \mbox{\hyperlink{class_line_a7a88506c38fcd0b73f9a076abce8c5fe}{Line}}, and \mbox{\hyperlink{class_rectangle_a529cd03c20c7b95d8a65564d2c33c5ff}{Rectangle}}.
+
+\mbox{\Hypertarget{class_shape_ab759e631a02a3f141a35ba94a6a9c01a}\label{class_shape_ab759e631a02a3f141a35ba94a6a9c01a}} 
+\index{Shape@{Shape}!writeToText@{writeToText}}
+\index{writeToText@{writeToText}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{writeToText()}{writeToText()}}
+{\footnotesize\ttfamily virtual void Shape\+::write\+To\+Text (\begin{DoxyParamCaption}\item[{std\+::fstream \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+writes a shape to a text file 
+
+
+
+Implemented in \mbox{\hyperlink{class_circle_a617b8c835b72851b501022a8410d04a3}{Circle}}, \mbox{\hyperlink{class_line_ab83d1a8c847deaa58569b893e74e0dbf}{Line}}, and \mbox{\hyperlink{class_rectangle_a5b2bc29bd6fe17e3da37ec2a19d30aa5}{Rectangle}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Second-\/\+Project/\+Second\+Project/Shape.\+h\item 
+Second-\/\+Project/\+Second\+Project/Shape.\+cpp\end{DoxyCompactItemize}

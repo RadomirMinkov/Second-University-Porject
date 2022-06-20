@@ -1,0 +1,65 @@
+\hypertarget{class_container}{}\doxysection{Container Class Reference}
+\label{class_container}\index{Container@{Container}}
+
+
+class \mbox{\hyperlink{class_container}{Container}} which has the basics functions of the vector of Shapes  
+
+
+
+
+{\ttfamily \#include $<$Container.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_container_a94b4fac4e0bd7028db72ae806ffd61e1}{Container}} ()=default
+\begin{DoxyCompactList}\small\item\em public properties \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_container_a6af5d2a888df6cb809487ca64d98b0af}\label{class_container_a6af5d2a888df6cb809487ca64d98b0af}} 
+{\bfseries Container} (\mbox{\hyperlink{class_my_vector}{My\+Vector}}$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \+\_\+shapes)
+\begin{DoxyCompactList}\small\item\em constructor with parameters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_container_a90154681b35817de19437129d4e07eac}\label{class_container_a90154681b35817de19437129d4e07eac}} 
+void {\bfseries add\+Shape} (const \mbox{\hyperlink{class_shape}{Shape}} $\ast$new\+Shape)
+\begin{DoxyCompactList}\small\item\em adding shape to the vector \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_container_ac9816c8384919729386084ca39031c22}\label{class_container_ac9816c8384919729386084ca39031c22}} 
+void {\bfseries erase\+Shape} (unsigned n)
+\begin{DoxyCompactList}\small\item\em erasing shape to the vector \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_container_a9d53a18f89bc2ecbc48901864dc5de87}\label{class_container_a9d53a18f89bc2ecbc48901864dc5de87}} 
+void {\bfseries print} (std\+::ostream \&out=std\+::cout) const noexcept
+\begin{DoxyCompactList}\small\item\em printing the vector \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_container_ac64184a8a7455717933d83d1519d1a1d}\label{class_container_ac64184a8a7455717933d83d1519d1a1d}} 
+void {\bfseries translate} (int vertical, int horizontal, int n=0) const noexcept
+\begin{DoxyCompactList}\small\item\em translates shapes in the vector \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_container_a3bfb91a708edf87d4a18b5e307b4f484}\label{class_container_a3bfb91a708edf87d4a18b5e307b4f484}} 
+void {\bfseries within\+Circle} (\mbox{\hyperlink{class_circle}{Circle}} const \&region) const noexcept
+\begin{DoxyCompactList}\small\item\em checks how many shapes are inside a \mbox{\hyperlink{class_circle}{Circle}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_container_ab1b01ea9c9fefddad37595cb7c0d6beb}\label{class_container_ab1b01ea9c9fefddad37595cb7c0d6beb}} 
+void {\bfseries within\+Rectangle} (\mbox{\hyperlink{class_rectangle}{Rectangle}} const \&region) const noexcept
+\begin{DoxyCompactList}\small\item\em checkshow many shapes are inside a \mbox{\hyperlink{class_rectangle}{Rectangle}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_container_ab67d145a64aefa8076f24bda63403e7f}\label{class_container_ab67d145a64aefa8076f24bda63403e7f}} 
+void {\bfseries read\+From\+Text} (std\+::fstream \&in)
+\begin{DoxyCompactList}\small\item\em reads shapes from a text file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_container_ab799337641885de17a1e87e0788b6dc6}\label{class_container_ab799337641885de17a1e87e0788b6dc6}} 
+void {\bfseries write\+To\+Text} (std\+::fstream \&out) const
+\begin{DoxyCompactList}\small\item\em writes shapes to a text file \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class \mbox{\hyperlink{class_container}{Container}} which has the basics functions of the vector of Shapes 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_container_a94b4fac4e0bd7028db72ae806ffd61e1}\label{class_container_a94b4fac4e0bd7028db72ae806ffd61e1}} 
+\index{Container@{Container}!Container@{Container}}
+\index{Container@{Container}!Container@{Container}}
+\doxysubsubsection{\texorpdfstring{Container()}{Container()}}
+{\footnotesize\ttfamily Container\+::\+Container (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+public properties 
+
+default constructor 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Second-\/\+Project/\+Second\+Project/Container.\+h\item 
+Second-\/\+Project/\+Second\+Project/Container.\+cpp\end{DoxyCompactItemize}

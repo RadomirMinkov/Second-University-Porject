@@ -1,0 +1,80 @@
+\hypertarget{class_my_string}{}\doxysection{My\+String Class Reference}
+\label{class_my_string}\index{MyString@{MyString}}
+
+
+class String which takes care of the used memory  
+
+
+
+
+{\ttfamily \#include $<$My\+String.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_my_string_a7eb6eb35891d3e44c1c419963bb82643}{My\+String}} (const char $\ast$\+\_\+data=\char`\"{}unkwown\char`\"{})
+\begin{DoxyCompactList}\small\item\em public properties \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_my_string_a0dcf7102cea9b901d3718e51ba1b20f4}\label{class_my_string_a0dcf7102cea9b901d3718e51ba1b20f4}} 
+{\bfseries My\+String} (\mbox{\hyperlink{class_my_string}{My\+String}} const \&other)
+\begin{DoxyCompactList}\small\item\em copy constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_my_string_af3199d00953fa6321fac3edb19acad0e}\label{class_my_string_af3199d00953fa6321fac3edb19acad0e}} 
+\mbox{\hyperlink{class_my_string}{My\+String}} \& {\bfseries operator=} (\mbox{\hyperlink{class_my_string}{My\+String}} const \&other)
+\begin{DoxyCompactList}\small\item\em copy assignment \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_my_string_a9c67e6f11b8bb8280d7ba805c37198b6}\label{class_my_string_a9c67e6f11b8bb8280d7ba805c37198b6}} 
+const char $\ast$ {\bfseries get\+String} () const
+\begin{DoxyCompactList}\small\item\em return the array \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_my_string_adaf3116663d2d4dbf03c76129b4026f0}\label{class_my_string_adaf3116663d2d4dbf03c76129b4026f0}} 
+size\+\_\+t {\bfseries get\+Size} () const
+\begin{DoxyCompactList}\small\item\em return the size \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_my_string_ac59179f1841b50475de1e6ca8a9352eb}\label{class_my_string_ac59179f1841b50475de1e6ca8a9352eb}} 
+void {\bfseries copy} (\mbox{\hyperlink{class_my_string}{My\+String}} const \&other)
+\item 
+\mbox{\Hypertarget{class_my_string_a7e515d2fc58fe19b4812e6495314f3c2}\label{class_my_string_a7e515d2fc58fe19b4812e6495314f3c2}} 
+void {\bfseries copy\+NSymbols} (const char $\ast$other, int \&n)
+\begin{DoxyCompactList}\small\item\em copies the first n symbols from a string \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_my_string_a0422b81a79efb7061280696f855fa883}\label{class_my_string_a0422b81a79efb7061280696f855fa883}} 
+void {\bfseries delete\+String} ()
+\begin{DoxyCompactList}\small\item\em deletes the string \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_my_string_a3cc899c87ced3b32115348868777eb39}\label{class_my_string_a3cc899c87ced3b32115348868777eb39}} 
+void {\bfseries print\+String} (std\+::ostream \&out=std\+::cout) const
+\begin{DoxyCompactList}\small\item\em prints the array \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_my_string_aaedaf727ab406f992fc048b8b7b5511c}\label{class_my_string_aaedaf727ab406f992fc048b8b7b5511c}} 
+void {\bfseries print} (std\+::ostream \&out=std\+::cout) const
+\begin{DoxyCompactList}\small\item\em prints the string \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_my_string_afa7aa3e5d556b9ee6778fefe1eba0981}\label{class_my_string_afa7aa3e5d556b9ee6778fefe1eba0981}} 
+void {\bfseries println} (std\+::ostream \&out) const
+\begin{DoxyCompactList}\small\item\em prints the string with a new line \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_my_string_a645c1adf26625f80684ec4a504bfd99f}\label{class_my_string_a645c1adf26625f80684ec4a504bfd99f}} 
+bool {\bfseries operator==} (\mbox{\hyperlink{class_my_string}{My\+String}} const \&other) const
+\begin{DoxyCompactList}\small\item\em function that checks if two strings are equal \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_my_string_ad5b3007b0b48171ca48924e88bab92d0}\label{class_my_string_ad5b3007b0b48171ca48924e88bab92d0}} 
+bool {\bfseries operator!=} (\mbox{\hyperlink{class_my_string}{My\+String}} const \&other) const
+\begin{DoxyCompactList}\small\item\em function that checks if two strings are different \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_my_string_a19801b00a547a2757dbee0944848b2cd}\label{class_my_string_a19801b00a547a2757dbee0944848b2cd}} 
+std\+::istream \& {\bfseries operator$>$$>$} (std\+::istream \&in, \mbox{\hyperlink{class_my_string}{My\+String}} \&other)
+\begin{DoxyCompactList}\small\item\em operator for incerting information \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class String which takes care of the used memory 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_my_string_a7eb6eb35891d3e44c1c419963bb82643}\label{class_my_string_a7eb6eb35891d3e44c1c419963bb82643}} 
+\index{MyString@{MyString}!MyString@{MyString}}
+\index{MyString@{MyString}!MyString@{MyString}}
+\doxysubsubsection{\texorpdfstring{MyString()}{MyString()}}
+{\footnotesize\ttfamily My\+String\+::\+My\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{\+\_\+data = {\ttfamily \char`\"{}unkwown\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+public properties 
+
+constructor with default parameters 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Second-\/\+Project/\+Second\+Project/My\+String.\+h\item 
+Second-\/\+Project/\+Second\+Project/My\+String.\+cpp\end{DoxyCompactItemize}

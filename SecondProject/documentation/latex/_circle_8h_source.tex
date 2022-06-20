@@ -1,0 +1,46 @@
+\hypertarget{_circle_8h_source}{}\doxysection{Circle.\+h}
+\label{_circle_8h_source}\index{Second-\/Project/SecondProject/Circle.h@{Second-\/Project/SecondProject/Circle.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_CIRCLE\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_CIRCLE\_HPP}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <exception>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <stdexcept>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}Types.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}Shape.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}Point.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}MyString.h"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}Rectangle.h"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}Constants.h"{}}}
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_circle}{Circle}} :\textcolor{keyword}{public} \mbox{\hyperlink{class_shape}{Shape}}}
+\DoxyCodeLine{14 \{}
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_point}{Point}} center;}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_my_string}{MyString}} fill;}
+\DoxyCodeLine{22     \textcolor{keywordtype}{float} radius;}
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} setRadius(\textcolor{keywordtype}{float} \_radius);}
+\DoxyCodeLine{26 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_circle_a6609904d9bc761d37b017d3bb17c533c}{Circle}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_circle_a6609904d9bc761d37b017d3bb17c533c}{Circle}}(\mbox{\hyperlink{class_point}{Point}} \_center,\mbox{\hyperlink{class_my_string}{MyString}} \_fill, \textcolor{keywordtype}{float} \_radius);}
+\DoxyCodeLine{32     \mbox{\hyperlink{class_circle}{Circle}}* \mbox{\hyperlink{class_circle_a944e8bf4111ee2bbcf3159d570d5d38e}{clone}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{34     \mbox{\hyperlink{class_circle_a6385ef0f49f36149893dc0fa5fa27eca}{\string~Circle}}()\textcolor{keyword}{ override }\{\};}
+\DoxyCodeLine{36     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_circle_a95b7dc25d2e9b1e40a189cd83386a12e}{getRadius}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} radius; \}}
+\DoxyCodeLine{38     \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_circle_a9818ca0bbac64ff447945a8e51ff9319}{getCenter}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} center; \}}
+\DoxyCodeLine{40     \mbox{\hyperlink{class_my_string}{MyString}} \mbox{\hyperlink{class_circle_acda6ec485dc4f77145f9e69235acb63c}{getFillColour}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} fill; \}}
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_circle_a15eeaa201d44524667efa690e1a74297}{print}}(std::ostream\& = std::cout)\textcolor{keyword}{const override};}
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_circle_ae54452c45d68c9c1e15190117f0e43b0}{println}}(std::ostream\& out = std::cout)\textcolor{keyword}{const override};}
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_circle_a96c46d3192f592c23d0774af4e30d4a8}{translate}}(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int}) \textcolor{keyword}{override};}
+\DoxyCodeLine{48     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_circle_ad77f3df335f744d84296d26b6749cfce}{withinCircle}}(\mbox{\hyperlink{class_circle}{Circle}} \textcolor{keyword}{const}\& region)\textcolor{keyword}{const  override};}
+\DoxyCodeLine{50     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_circle_af9d9b5b3b4a9e5ac6039a22a43953516}{withinRectangle}}(\mbox{\hyperlink{class_rectangle}{Rectangle}} \textcolor{keyword}{const}\& region)\textcolor{keyword}{const override};}
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_circle_a0695ba839a32f357d70dcaa0083c5c38}{readFromText}}(std::fstream\& in);}
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_circle_a617b8c835b72851b501022a8410d04a3}{writeToText}}(std::fstream\& out);}
+\DoxyCodeLine{56     ShapeType \mbox{\hyperlink{class_circle_ac0011f37536563396471cbcce8438080}{getType}}()\textcolor{keyword}{ const override }\{ \textcolor{keywordflow}{return} ShapeType::circle; \}}
+\DoxyCodeLine{58     \mbox{\hyperlink{class_my_string}{MyString}} \mbox{\hyperlink{class_circle_a20b766d99f3c528dc25f0eedf880332a}{getShape}}()\textcolor{keyword}{ const override }\{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}circle"{}}; \}}
+\DoxyCodeLine{59 \};}
+\DoxyCodeLine{60 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !\_CIRCLE\_HPP}}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63 }
+
+\end{DoxyCode}

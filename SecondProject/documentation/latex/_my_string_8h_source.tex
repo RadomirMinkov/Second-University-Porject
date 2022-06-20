@@ -1,0 +1,41 @@
+\hypertarget{_my_string_8h_source}{}\doxysection{My\+String.\+h}
+\label{_my_string_8h_source}\index{Second-\/Project/SecondProject/MyString.h@{Second-\/Project/SecondProject/MyString.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_MYSTRING\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_MYSTRING\_HPP}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <cstring>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <exception>}}
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_my_string}{MyString}}}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{10 \textcolor{keyword}{private}:}
+\DoxyCodeLine{12     \textcolor{keywordtype}{char}* data\{ \textcolor{keyword}{nullptr} \};}
+\DoxyCodeLine{14     \textcolor{keywordtype}{size\_t} size;}
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_my_string_a7eb6eb35891d3e44c1c419963bb82643}{MyString}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* \_data = \textcolor{stringliteral}{"{}unkwown"{}});}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_my_string_a7eb6eb35891d3e44c1c419963bb82643}{MyString}}(\mbox{\hyperlink{class_my_string}{MyString}} \textcolor{keyword}{const}\& other);}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_my_string}{MyString}}\& \mbox{\hyperlink{class_my_string_af3199d00953fa6321fac3edb19acad0e}{operator=}}(\mbox{\hyperlink{class_my_string}{MyString}} \textcolor{keyword}{const}\& other);}
+\DoxyCodeLine{23     \textcolor{comment}{//destructor}}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_my_string}{\string~MyString}}();}
+\DoxyCodeLine{26     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* \mbox{\hyperlink{class_my_string_a9c67e6f11b8bb8280d7ba805c37198b6}{getString}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} data; \}}
+\DoxyCodeLine{28     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_my_string_adaf3116663d2d4dbf03c76129b4026f0}{getSize}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} size; \}}
+\DoxyCodeLine{29     \textcolor{comment}{//copies the string from the string in the parameters}}
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} copy(\mbox{\hyperlink{class_my_string}{MyString}} \textcolor{keyword}{const}\& other);}
+\DoxyCodeLine{31     \textcolor{comment}{//void copyNSymbols(MyString const\& other);}}
+\DoxyCodeLine{33 \textcolor{comment}{}    \textcolor{keywordtype}{void} \mbox{\hyperlink{class_my_string_a7e515d2fc58fe19b4812e6495314f3c2}{copyNSymbols}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* other, \textcolor{keywordtype}{int}\&  n);}
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_my_string_a0422b81a79efb7061280696f855fa883}{deleteString}}();}
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_my_string_a3cc899c87ced3b32115348868777eb39}{printString}}(std::ostream\& out = std::cout)\textcolor{keyword}{const};}
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_my_string_aaedaf727ab406f992fc048b8b7b5511c}{print}}(std::ostream\& out=std::cout) \textcolor{keyword}{const};}
+\DoxyCodeLine{41     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_my_string_afa7aa3e5d556b9ee6778fefe1eba0981}{println}}(std::ostream\& out)\textcolor{keyword}{const};}
+\DoxyCodeLine{43     \textcolor{keyword}{friend} std::istream\& \mbox{\hyperlink{class_my_string_a19801b00a547a2757dbee0944848b2cd}{operator>>}}(std::istream\& in, \mbox{\hyperlink{class_my_string}{MyString}}\& other);}
+\DoxyCodeLine{45     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_my_string_a645c1adf26625f80684ec4a504bfd99f}{operator==}}(\mbox{\hyperlink{class_my_string}{MyString}} \textcolor{keyword}{const}\& other)\textcolor{keyword}{const};}
+\DoxyCodeLine{47     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_my_string_ad5b3007b0b48171ca48924e88bab92d0}{operator!=}}(\mbox{\hyperlink{class_my_string}{MyString}} \textcolor{keyword}{const}\& other)\textcolor{keyword}{const};}
+\DoxyCodeLine{48 \};}
+\DoxyCodeLine{50 std::ostream\& operator<<(std::ostream\& out, \mbox{\hyperlink{class_my_string}{MyString}} \textcolor{keyword}{const}\& other);}
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !\_MYSTRING\_HPP}}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 }
+
+\end{DoxyCode}

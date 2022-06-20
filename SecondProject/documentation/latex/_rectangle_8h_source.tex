@@ -1,0 +1,65 @@
+\hypertarget{_rectangle_8h_source}{}\doxysection{Rectangle.\+h}
+\label{_rectangle_8h_source}\index{Second-\/Project/SecondProject/Rectangle.h@{Second-\/Project/SecondProject/Rectangle.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_RECTANGLE\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_RECTANGLE\_HPP}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Types.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}Shape.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}Point.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}MyString.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}Rectangle.h"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}Circle.h"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}Constants.h"{}}}
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_rectangle}{Rectangle}} :\textcolor{keyword}{public} \mbox{\hyperlink{class_shape}{Shape}}}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{19 \textcolor{keyword}{private}:}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_point}{Point}} topLeft;}
+\DoxyCodeLine{23     \textcolor{keywordtype}{float} width;}
+\DoxyCodeLine{25     \textcolor{keywordtype}{float} height;}
+\DoxyCodeLine{27     \textcolor{keywordtype}{float} roundX;}
+\DoxyCodeLine{29     \textcolor{keywordtype}{float} roundY;}
+\DoxyCodeLine{31     \mbox{\hyperlink{class_my_string}{MyString}} colour;}
+\DoxyCodeLine{33     \mbox{\hyperlink{class_my_string}{MyString}} fill;}
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} setWidth(\textcolor{keywordtype}{float});}
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} setHeight(\textcolor{keywordtype}{float});}
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} setRoundX(\textcolor{keywordtype}{float});}
+\DoxyCodeLine{41     \textcolor{keywordtype}{void} setRoundY(\textcolor{keywordtype}{float});}
+\DoxyCodeLine{43     \mbox{\hyperlink{class_point}{Point}} topRight;}
+\DoxyCodeLine{45     \mbox{\hyperlink{class_point}{Point}} bottomLeft;}
+\DoxyCodeLine{47     \mbox{\hyperlink{class_point}{Point}} bottomRight;}
+\DoxyCodeLine{49 \textcolor{keyword}{public}:}
+\DoxyCodeLine{51     \mbox{\hyperlink{class_rectangle_ab74337363dcb42ccb4b030b0970085f8}{Rectangle}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{53     \mbox{\hyperlink{class_rectangle_ab74337363dcb42ccb4b030b0970085f8}{Rectangle}}(\mbox{\hyperlink{class_point}{Point}} \_topLeft,\mbox{\hyperlink{class_my_string}{MyString}} \_colour,\mbox{\hyperlink{class_my_string}{MyString}} \_fill,}
+\DoxyCodeLine{54          \textcolor{keywordtype}{float} \_width = 0, \textcolor{keywordtype}{float} \_height = 0,\textcolor{keywordtype}{float} \_roundX = 0, \textcolor{keywordtype}{float} \_roundY = 0);}
+\DoxyCodeLine{56     \mbox{\hyperlink{class_rectangle_a6e3ed18583022b35e04c109345d1e7d6}{\string~Rectangle}}()\textcolor{keyword}{ override }\{\};}
+\DoxyCodeLine{58     \mbox{\hyperlink{class_rectangle}{Rectangle}} * \mbox{\hyperlink{class_rectangle_aac57eacc95bf6ff125196b14f91177f9}{clone}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{60     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_rectangle_a3dc5863bdde58a3fd599eac5bc5761b1}{getWidth}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} width; \}}
+\DoxyCodeLine{62     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_rectangle_acd9b848297f86e141b99c150d8d16bab}{getHeight}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} height; \}}
+\DoxyCodeLine{64     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_rectangle_adb7c783700a5a5e04f4c9df630969b9f}{getRoundX}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} roundX; \}}
+\DoxyCodeLine{66     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_rectangle_a4534ec36cd0a6f33c6c9f1299eb958d1}{getRoundY}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} roundY; \}}
+\DoxyCodeLine{68     \mbox{\hyperlink{class_my_string}{MyString}} \mbox{\hyperlink{class_rectangle_a590b108e5608730de56b6215cb42978d}{getColour}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} colour; \}}
+\DoxyCodeLine{70      \mbox{\hyperlink{class_my_string}{MyString}} \mbox{\hyperlink{class_rectangle_a02f84d1982e5e229927a36dbe0ca4a73}{getFillColour}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} fill; \}}
+\DoxyCodeLine{72      \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_rectangle_a7c7bbf69e92bc98430a185abdd64ea61}{getTopLeftCorner}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} topLeft; \}}
+\DoxyCodeLine{73      \textcolor{comment}{//return the top right corner}}
+\DoxyCodeLine{74      \mbox{\hyperlink{class_point}{Point}} getTopRightCorner()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} topRight; \}}
+\DoxyCodeLine{76      \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_rectangle_a8fc549e704f587e0bf05f987855c1ee4}{getBottomLefttCorner}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} bottomLeft; \}}
+\DoxyCodeLine{78      \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_rectangle_ae4030e98f3b215751fa3321640d8e793}{getBottomRightCorner}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} bottomRight; \}}
+\DoxyCodeLine{80     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rectangle_acbc0a3dfa07d2e7509ced4ad24aaa0e0}{print}}(std::ostream\& = std::cout)\textcolor{keyword}{const override};}
+\DoxyCodeLine{82     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rectangle_a3c6abc025b177e38bd3e89cba466acf8}{println}}(std::ostream\& out = std::cout)\textcolor{keyword}{const override};}
+\DoxyCodeLine{84     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rectangle_aebdaa0a0ec4008e67f800d0a7a5b854f}{translate}}(\textcolor{keywordtype}{int} vertical, \textcolor{keywordtype}{int} horizontal) \textcolor{keyword}{override};}
+\DoxyCodeLine{86     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_rectangle_a529cd03c20c7b95d8a65564d2c33c5ff}{withinRectangle}}( \mbox{\hyperlink{class_rectangle}{Rectangle}} \textcolor{keyword}{const}\& region)\textcolor{keyword}{const  override};}
+\DoxyCodeLine{88     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_rectangle_af66a96b4d561816cbd9efed3ffe500aa}{withinCircle}}(\mbox{\hyperlink{class_circle}{Circle}} \textcolor{keyword}{const}\& region)\textcolor{keyword}{const  override};}
+\DoxyCodeLine{90     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rectangle_a5d57b909369f7a3f147894fdc3957e70}{readFromText}}(std::fstream\& in);}
+\DoxyCodeLine{92     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rectangle_a5b2bc29bd6fe17e3da37ec2a19d30aa5}{writeToText}}(std::fstream\& out);}
+\DoxyCodeLine{94     ShapeType \mbox{\hyperlink{class_rectangle_ac7d574e4a0db27e08ad7b719d8140c62}{getType}}()\textcolor{keyword}{ const override }\{ \textcolor{keywordflow}{return} ShapeType::rectangle; \}}
+\DoxyCodeLine{96     \mbox{\hyperlink{class_my_string}{MyString}} \mbox{\hyperlink{class_rectangle_a8f67bb5076f6212e1aa5b17af0065c27}{getShape}}()\textcolor{keyword}{ const override }\{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}rectangle"{}}; \}}
+\DoxyCodeLine{97 \};}
+\DoxyCodeLine{98 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !\_RECTANGLE\_HPP}}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101 }
+
+\end{DoxyCode}

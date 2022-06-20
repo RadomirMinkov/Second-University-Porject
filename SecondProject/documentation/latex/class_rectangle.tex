@@ -1,0 +1,244 @@
+\hypertarget{class_rectangle}{}\doxysection{Rectangle Class Reference}
+\label{class_rectangle}\index{Rectangle@{Rectangle}}
+
+
+class rectangle which is derived form base class shape  
+
+
+
+
+{\ttfamily \#include $<$Rectangle.\+h$>$}
+
+Inheritance diagram for Rectangle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_rectangle}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rectangle_ab74337363dcb42ccb4b030b0970085f8}{Rectangle}} ()=default
+\begin{DoxyCompactList}\small\item\em public proeprties \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rectangle_a7fb043863a9dd99d5dc1f2ff2b938c79}\label{class_rectangle_a7fb043863a9dd99d5dc1f2ff2b938c79}} 
+{\bfseries Rectangle} (\mbox{\hyperlink{class_point}{Point}} \+\_\+top\+Left, \mbox{\hyperlink{class_my_string}{My\+String}} \+\_\+colour, \mbox{\hyperlink{class_my_string}{My\+String}} \+\_\+fill, float \+\_\+width=0, float \+\_\+height=0, float \+\_\+roundX=0, float \+\_\+roundY=0)
+\begin{DoxyCompactList}\small\item\em constructor with parameters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rectangle_a6e3ed18583022b35e04c109345d1e7d6}\label{class_rectangle_a6e3ed18583022b35e04c109345d1e7d6}} 
+{\bfseries $\sim$\+Rectangle} () override
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rectangle}{Rectangle}} $\ast$ \mbox{\hyperlink{class_rectangle_aac57eacc95bf6ff125196b14f91177f9}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em function that returns a new copy of the rectangle \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rectangle_a3dc5863bdde58a3fd599eac5bc5761b1}\label{class_rectangle_a3dc5863bdde58a3fd599eac5bc5761b1}} 
+float {\bfseries get\+Width} () const
+\begin{DoxyCompactList}\small\item\em return the width \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rectangle_acd9b848297f86e141b99c150d8d16bab}\label{class_rectangle_acd9b848297f86e141b99c150d8d16bab}} 
+float {\bfseries get\+Height} () const
+\begin{DoxyCompactList}\small\item\em return the height \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rectangle_adb7c783700a5a5e04f4c9df630969b9f}\label{class_rectangle_adb7c783700a5a5e04f4c9df630969b9f}} 
+float {\bfseries get\+RoundX} () const
+\begin{DoxyCompactList}\small\item\em returns the rounding by X-\/axis \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rectangle_a4534ec36cd0a6f33c6c9f1299eb958d1}\label{class_rectangle_a4534ec36cd0a6f33c6c9f1299eb958d1}} 
+float {\bfseries get\+RoundY} () const
+\begin{DoxyCompactList}\small\item\em returns the rounding by Y-\/axis \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rectangle_a590b108e5608730de56b6215cb42978d}\label{class_rectangle_a590b108e5608730de56b6215cb42978d}} 
+\mbox{\hyperlink{class_my_string}{My\+String}} {\bfseries get\+Colour} () const
+\begin{DoxyCompactList}\small\item\em return the border colour \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rectangle_a02f84d1982e5e229927a36dbe0ca4a73}\label{class_rectangle_a02f84d1982e5e229927a36dbe0ca4a73}} 
+\mbox{\hyperlink{class_my_string}{My\+String}} {\bfseries get\+Fill\+Colour} () const
+\begin{DoxyCompactList}\small\item\em returns the inside colour \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rectangle_a7c7bbf69e92bc98430a185abdd64ea61}\label{class_rectangle_a7c7bbf69e92bc98430a185abdd64ea61}} 
+\mbox{\hyperlink{class_point}{Point}} {\bfseries get\+Top\+Left\+Corner} () const
+\begin{DoxyCompactList}\small\item\em return the top left corner \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rectangle_aef464023e65de182d5d370b6bc17d052}\label{class_rectangle_aef464023e65de182d5d370b6bc17d052}} 
+\mbox{\hyperlink{class_point}{Point}} {\bfseries get\+Top\+Right\+Corner} () const
+\item 
+\mbox{\Hypertarget{class_rectangle_a8fc549e704f587e0bf05f987855c1ee4}\label{class_rectangle_a8fc549e704f587e0bf05f987855c1ee4}} 
+\mbox{\hyperlink{class_point}{Point}} {\bfseries get\+Bottom\+Leftt\+Corner} () const
+\begin{DoxyCompactList}\small\item\em return the bottom left corner \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rectangle_ae4030e98f3b215751fa3321640d8e793}\label{class_rectangle_ae4030e98f3b215751fa3321640d8e793}} 
+\mbox{\hyperlink{class_point}{Point}} {\bfseries get\+Bottom\+Right\+Corner} () const
+\begin{DoxyCompactList}\small\item\em return the bottom right corner \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rectangle_acbc0a3dfa07d2e7509ced4ad24aaa0e0}{print}} (std\+::ostream \&=std\+::cout) const override
+\begin{DoxyCompactList}\small\item\em printing the rectangle \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rectangle_a3c6abc025b177e38bd3e89cba466acf8}{println}} (std\+::ostream \&out=std\+::cout) const override
+\begin{DoxyCompactList}\small\item\em printing the shape but with a new line \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rectangle_aebdaa0a0ec4008e67f800d0a7a5b854f}{translate}} (int vertical, int horizontal) override
+\begin{DoxyCompactList}\small\item\em translates the rectangle \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_rectangle_a529cd03c20c7b95d8a65564d2c33c5ff}{within\+Rectangle}} (\mbox{\hyperlink{class_rectangle}{Rectangle}} const \&region) const override
+\begin{DoxyCompactList}\small\item\em checks if the rectangle is inside another rectangle \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_rectangle_af66a96b4d561816cbd9efed3ffe500aa}{within\+Circle}} (\mbox{\hyperlink{class_circle}{Circle}} const \&region) const override
+\begin{DoxyCompactList}\small\item\em checks if the rectangle is inside a circle \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rectangle_a5d57b909369f7a3f147894fdc3957e70}{read\+From\+Text}} (std\+::fstream \&in)
+\begin{DoxyCompactList}\small\item\em reads rectangle from a text file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rectangle_a5b2bc29bd6fe17e3da37ec2a19d30aa5}{write\+To\+Text}} (std\+::fstream \&out)
+\begin{DoxyCompactList}\small\item\em writes rectangle to a text file \end{DoxyCompactList}\item 
+Shape\+Type \mbox{\hyperlink{class_rectangle_ac7d574e4a0db27e08ad7b719d8140c62}{get\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em returns the type of the rectangle \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_my_string}{My\+String}} \mbox{\hyperlink{class_rectangle_a8f67bb5076f6212e1aa5b17af0065c27}{get\+Shape}} () const override
+\begin{DoxyCompactList}\small\item\em return the type but with a string \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+class rectangle which is derived form base class shape 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_rectangle_ab74337363dcb42ccb4b030b0970085f8}\label{class_rectangle_ab74337363dcb42ccb4b030b0970085f8}} 
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}}
+{\footnotesize\ttfamily Rectangle\+::\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+public proeprties 
+
+default constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rectangle_aac57eacc95bf6ff125196b14f91177f9}\label{class_rectangle_aac57eacc95bf6ff125196b14f91177f9}} 
+\index{Rectangle@{Rectangle}!clone@{clone}}
+\index{clone@{clone}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rectangle}{Rectangle}} $\ast$ Rectangle\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+function that returns a new copy of the rectangle 
+
+
+
+Implements \mbox{\hyperlink{class_shape_a335a0e50e3ccba60c7e6751d0aede2b9}{Shape}}.
+
+\mbox{\Hypertarget{class_rectangle_a8f67bb5076f6212e1aa5b17af0065c27}\label{class_rectangle_a8f67bb5076f6212e1aa5b17af0065c27}} 
+\index{Rectangle@{Rectangle}!getShape@{getShape}}
+\index{getShape@{getShape}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{getShape()}{getShape()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_my_string}{My\+String}} Rectangle\+::get\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+return the type but with a string 
+
+
+
+Implements \mbox{\hyperlink{class_shape_ae5a877ad74b9c9d3eed55a1ec5115700}{Shape}}.
+
+\mbox{\Hypertarget{class_rectangle_ac7d574e4a0db27e08ad7b719d8140c62}\label{class_rectangle_ac7d574e4a0db27e08ad7b719d8140c62}} 
+\index{Rectangle@{Rectangle}!getType@{getType}}
+\index{getType@{getType}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily Shape\+Type Rectangle\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+returns the type of the rectangle 
+
+
+
+Implements \mbox{\hyperlink{class_shape_a1a4b4fa6764bc94365fec828de08d667}{Shape}}.
+
+\mbox{\Hypertarget{class_rectangle_acbc0a3dfa07d2e7509ced4ad24aaa0e0}\label{class_rectangle_acbc0a3dfa07d2e7509ced4ad24aaa0e0}} 
+\index{Rectangle@{Rectangle}!print@{print}}
+\index{print@{print}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Rectangle\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out = {\ttfamily std\+:\+:cout} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+printing the rectangle 
+
+
+
+Implements \mbox{\hyperlink{class_shape_a0001207a3f1c482185583d98331bea51}{Shape}}.
+
+\mbox{\Hypertarget{class_rectangle_a3c6abc025b177e38bd3e89cba466acf8}\label{class_rectangle_a3c6abc025b177e38bd3e89cba466acf8}} 
+\index{Rectangle@{Rectangle}!println@{println}}
+\index{println@{println}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{println()}{println()}}
+{\footnotesize\ttfamily void Rectangle\+::println (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out = {\ttfamily std\+:\+:cout} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+printing the shape but with a new line 
+
+
+
+Implements \mbox{\hyperlink{class_shape_ad2426b19b1b2dd78a8940489c9e0b9f9}{Shape}}.
+
+\mbox{\Hypertarget{class_rectangle_a5d57b909369f7a3f147894fdc3957e70}\label{class_rectangle_a5d57b909369f7a3f147894fdc3957e70}} 
+\index{Rectangle@{Rectangle}!readFromText@{readFromText}}
+\index{readFromText@{readFromText}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{readFromText()}{readFromText()}}
+{\footnotesize\ttfamily void Rectangle\+::read\+From\+Text (\begin{DoxyParamCaption}\item[{std\+::fstream \&}]{in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+reads rectangle from a text file 
+
+
+
+Implements \mbox{\hyperlink{class_shape_a89f67f3b86d9c9cc0c65b991b96ac887}{Shape}}.
+
+\mbox{\Hypertarget{class_rectangle_aebdaa0a0ec4008e67f800d0a7a5b854f}\label{class_rectangle_aebdaa0a0ec4008e67f800d0a7a5b854f}} 
+\index{Rectangle@{Rectangle}!translate@{translate}}
+\index{translate@{translate}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily void Rectangle\+::translate (\begin{DoxyParamCaption}\item[{int}]{vertical,  }\item[{int}]{horizontal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+translates the rectangle 
+
+
+
+Implements \mbox{\hyperlink{class_shape_a6af33fdc8e116c18218369a4ea33d18f}{Shape}}.
+
+\mbox{\Hypertarget{class_rectangle_af66a96b4d561816cbd9efed3ffe500aa}\label{class_rectangle_af66a96b4d561816cbd9efed3ffe500aa}} 
+\index{Rectangle@{Rectangle}!withinCircle@{withinCircle}}
+\index{withinCircle@{withinCircle}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{withinCircle()}{withinCircle()}}
+{\footnotesize\ttfamily bool Rectangle\+::within\+Circle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_circle}{Circle}} const \&}]{region }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+checks if the rectangle is inside a circle 
+
+
+
+Implements \mbox{\hyperlink{class_shape_aeda73185b10fd8f9c32828cc440c4955}{Shape}}.
+
+\mbox{\Hypertarget{class_rectangle_a529cd03c20c7b95d8a65564d2c33c5ff}\label{class_rectangle_a529cd03c20c7b95d8a65564d2c33c5ff}} 
+\index{Rectangle@{Rectangle}!withinRectangle@{withinRectangle}}
+\index{withinRectangle@{withinRectangle}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{withinRectangle()}{withinRectangle()}}
+{\footnotesize\ttfamily bool Rectangle\+::within\+Rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rectangle}{Rectangle}} const \&}]{region }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+checks if the rectangle is inside another rectangle 
+
+
+
+Implements \mbox{\hyperlink{class_shape_a7d0e84c0eb31aea5c7f5c8fa8103c35c}{Shape}}.
+
+\mbox{\Hypertarget{class_rectangle_a5b2bc29bd6fe17e3da37ec2a19d30aa5}\label{class_rectangle_a5b2bc29bd6fe17e3da37ec2a19d30aa5}} 
+\index{Rectangle@{Rectangle}!writeToText@{writeToText}}
+\index{writeToText@{writeToText}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{writeToText()}{writeToText()}}
+{\footnotesize\ttfamily void Rectangle\+::write\+To\+Text (\begin{DoxyParamCaption}\item[{std\+::fstream \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+writes rectangle to a text file 
+
+
+
+Implements \mbox{\hyperlink{class_shape_ab759e631a02a3f141a35ba94a6a9c01a}{Shape}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Second-\/\+Project/\+Second\+Project/Rectangle.\+h\item 
+Second-\/\+Project/\+Second\+Project/Rectangle.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,223 @@
+\hypertarget{class_circle}{}\doxysection{Circle Class Reference}
+\label{class_circle}\index{Circle@{Circle}}
+
+
+class Cricle derived from a base class shape  
+
+
+
+
+{\ttfamily \#include $<$Circle.\+h$>$}
+
+Inheritance diagram for Circle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_circle}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_circle_a6609904d9bc761d37b017d3bb17c533c}{Circle}} ()=default
+\begin{DoxyCompactList}\small\item\em public properties \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_circle_a93a3644d124d74bd2bb6f010bd32a021}\label{class_circle_a93a3644d124d74bd2bb6f010bd32a021}} 
+{\bfseries Circle} (\mbox{\hyperlink{class_point}{Point}} \+\_\+center, \mbox{\hyperlink{class_my_string}{My\+String}} \+\_\+fill, float \+\_\+radius)
+\begin{DoxyCompactList}\small\item\em costructor with parameters \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_circle}{Circle}} $\ast$ \mbox{\hyperlink{class_circle_a944e8bf4111ee2bbcf3159d570d5d38e}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em function clone that return a new instance of the circle \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_circle_a6385ef0f49f36149893dc0fa5fa27eca}\label{class_circle_a6385ef0f49f36149893dc0fa5fa27eca}} 
+{\bfseries $\sim$\+Circle} () override
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_circle_a95b7dc25d2e9b1e40a189cd83386a12e}\label{class_circle_a95b7dc25d2e9b1e40a189cd83386a12e}} 
+float {\bfseries get\+Radius} () const
+\begin{DoxyCompactList}\small\item\em return the radius of the circle \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_circle_a9818ca0bbac64ff447945a8e51ff9319}\label{class_circle_a9818ca0bbac64ff447945a8e51ff9319}} 
+\mbox{\hyperlink{class_point}{Point}} {\bfseries get\+Center} () const
+\begin{DoxyCompactList}\small\item\em returns the radius of the \mbox{\hyperlink{class_circle}{Circle}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_circle_acda6ec485dc4f77145f9e69235acb63c}\label{class_circle_acda6ec485dc4f77145f9e69235acb63c}} 
+\mbox{\hyperlink{class_my_string}{My\+String}} {\bfseries get\+Fill\+Colour} () const
+\begin{DoxyCompactList}\small\item\em return the fill Colour of the circle \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circle_a15eeaa201d44524667efa690e1a74297}{print}} (std\+::ostream \&=std\+::cout) const override
+\begin{DoxyCompactList}\small\item\em printing the circle \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circle_ae54452c45d68c9c1e15190117f0e43b0}{println}} (std\+::ostream \&out=std\+::cout) const override
+\begin{DoxyCompactList}\small\item\em printing the circle but with a new line \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circle_a96c46d3192f592c23d0774af4e30d4a8}{translate}} (int, int) override
+\begin{DoxyCompactList}\small\item\em translates the circle \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_circle_ad77f3df335f744d84296d26b6749cfce}{within\+Circle}} (\mbox{\hyperlink{class_circle}{Circle}} const \&region) const override
+\begin{DoxyCompactList}\small\item\em checks if the circle is inside another circle \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_circle_af9d9b5b3b4a9e5ac6039a22a43953516}{within\+Rectangle}} (\mbox{\hyperlink{class_rectangle}{Rectangle}} const \&region) const override
+\begin{DoxyCompactList}\small\item\em checks if the circle is inside rectangle \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circle_a0695ba839a32f357d70dcaa0083c5c38}{read\+From\+Text}} (std\+::fstream \&in)
+\begin{DoxyCompactList}\small\item\em reads circle from a text file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circle_a617b8c835b72851b501022a8410d04a3}{write\+To\+Text}} (std\+::fstream \&out)
+\begin{DoxyCompactList}\small\item\em writes circle to a text file \end{DoxyCompactList}\item 
+Shape\+Type \mbox{\hyperlink{class_circle_ac0011f37536563396471cbcce8438080}{get\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em returns the type of the shape \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_my_string}{My\+String}} \mbox{\hyperlink{class_circle_a20b766d99f3c528dc25f0eedf880332a}{get\+Shape}} () const override
+\begin{DoxyCompactList}\small\item\em return the type but with a string \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+class Cricle derived from a base class shape 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_circle_a6609904d9bc761d37b017d3bb17c533c}\label{class_circle_a6609904d9bc761d37b017d3bb17c533c}} 
+\index{Circle@{Circle}!Circle@{Circle}}
+\index{Circle@{Circle}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{Circle()}{Circle()}}
+{\footnotesize\ttfamily Circle\+::\+Circle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+public properties 
+
+default constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_circle_a944e8bf4111ee2bbcf3159d570d5d38e}\label{class_circle_a944e8bf4111ee2bbcf3159d570d5d38e}} 
+\index{Circle@{Circle}!clone@{clone}}
+\index{clone@{clone}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_circle}{Circle}} $\ast$ Circle\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+function clone that return a new instance of the circle 
+
+
+
+Implements \mbox{\hyperlink{class_shape_a335a0e50e3ccba60c7e6751d0aede2b9}{Shape}}.
+
+\mbox{\Hypertarget{class_circle_a20b766d99f3c528dc25f0eedf880332a}\label{class_circle_a20b766d99f3c528dc25f0eedf880332a}} 
+\index{Circle@{Circle}!getShape@{getShape}}
+\index{getShape@{getShape}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{getShape()}{getShape()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_my_string}{My\+String}} Circle\+::get\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+return the type but with a string 
+
+
+
+Implements \mbox{\hyperlink{class_shape_ae5a877ad74b9c9d3eed55a1ec5115700}{Shape}}.
+
+\mbox{\Hypertarget{class_circle_ac0011f37536563396471cbcce8438080}\label{class_circle_ac0011f37536563396471cbcce8438080}} 
+\index{Circle@{Circle}!getType@{getType}}
+\index{getType@{getType}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily Shape\+Type Circle\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+returns the type of the shape 
+
+
+
+Implements \mbox{\hyperlink{class_shape_a1a4b4fa6764bc94365fec828de08d667}{Shape}}.
+
+\mbox{\Hypertarget{class_circle_a15eeaa201d44524667efa690e1a74297}\label{class_circle_a15eeaa201d44524667efa690e1a74297}} 
+\index{Circle@{Circle}!print@{print}}
+\index{print@{print}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Circle\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out = {\ttfamily std\+:\+:cout} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+printing the circle 
+
+
+
+Implements \mbox{\hyperlink{class_shape_a0001207a3f1c482185583d98331bea51}{Shape}}.
+
+\mbox{\Hypertarget{class_circle_ae54452c45d68c9c1e15190117f0e43b0}\label{class_circle_ae54452c45d68c9c1e15190117f0e43b0}} 
+\index{Circle@{Circle}!println@{println}}
+\index{println@{println}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{println()}{println()}}
+{\footnotesize\ttfamily void Circle\+::println (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out = {\ttfamily std\+:\+:cout} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+printing the circle but with a new line 
+
+
+
+Implements \mbox{\hyperlink{class_shape_ad2426b19b1b2dd78a8940489c9e0b9f9}{Shape}}.
+
+\mbox{\Hypertarget{class_circle_a0695ba839a32f357d70dcaa0083c5c38}\label{class_circle_a0695ba839a32f357d70dcaa0083c5c38}} 
+\index{Circle@{Circle}!readFromText@{readFromText}}
+\index{readFromText@{readFromText}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{readFromText()}{readFromText()}}
+{\footnotesize\ttfamily void Circle\+::read\+From\+Text (\begin{DoxyParamCaption}\item[{std\+::fstream \&}]{in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+reads circle from a text file 
+
+
+
+Implements \mbox{\hyperlink{class_shape_a89f67f3b86d9c9cc0c65b991b96ac887}{Shape}}.
+
+\mbox{\Hypertarget{class_circle_a96c46d3192f592c23d0774af4e30d4a8}\label{class_circle_a96c46d3192f592c23d0774af4e30d4a8}} 
+\index{Circle@{Circle}!translate@{translate}}
+\index{translate@{translate}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily void Circle\+::translate (\begin{DoxyParamCaption}\item[{int}]{horizontal,  }\item[{int}]{vertical }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+translates the circle 
+
+
+
+Implements \mbox{\hyperlink{class_shape_a6af33fdc8e116c18218369a4ea33d18f}{Shape}}.
+
+\mbox{\Hypertarget{class_circle_ad77f3df335f744d84296d26b6749cfce}\label{class_circle_ad77f3df335f744d84296d26b6749cfce}} 
+\index{Circle@{Circle}!withinCircle@{withinCircle}}
+\index{withinCircle@{withinCircle}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{withinCircle()}{withinCircle()}}
+{\footnotesize\ttfamily bool Circle\+::within\+Circle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_circle}{Circle}} const \&}]{region }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+checks if the circle is inside another circle 
+
+
+
+Implements \mbox{\hyperlink{class_shape_aeda73185b10fd8f9c32828cc440c4955}{Shape}}.
+
+\mbox{\Hypertarget{class_circle_af9d9b5b3b4a9e5ac6039a22a43953516}\label{class_circle_af9d9b5b3b4a9e5ac6039a22a43953516}} 
+\index{Circle@{Circle}!withinRectangle@{withinRectangle}}
+\index{withinRectangle@{withinRectangle}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{withinRectangle()}{withinRectangle()}}
+{\footnotesize\ttfamily bool Circle\+::within\+Rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rectangle}{Rectangle}} const \&}]{region }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+checks if the circle is inside rectangle 
+
+
+
+Implements \mbox{\hyperlink{class_shape_a7d0e84c0eb31aea5c7f5c8fa8103c35c}{Shape}}.
+
+\mbox{\Hypertarget{class_circle_a617b8c835b72851b501022a8410d04a3}\label{class_circle_a617b8c835b72851b501022a8410d04a3}} 
+\index{Circle@{Circle}!writeToText@{writeToText}}
+\index{writeToText@{writeToText}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{writeToText()}{writeToText()}}
+{\footnotesize\ttfamily void Circle\+::write\+To\+Text (\begin{DoxyParamCaption}\item[{std\+::fstream \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+writes circle to a text file 
+
+
+
+Implements \mbox{\hyperlink{class_shape_ab759e631a02a3f141a35ba94a6a9c01a}{Shape}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Second-\/\+Project/\+Second\+Project/Circle.\+h\item 
+Second-\/\+Project/\+Second\+Project/Circle.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,48 @@
+\hypertarget{_line_8h_source}{}\doxysection{Line.\+h}
+\label{_line_8h_source}\index{Second-\/Project/SecondProject/Line.h@{Second-\/Project/SecondProject/Line.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_LINE\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_LINE\_HPP}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <exception>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <stdexcept>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}Types.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}Shape.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}Point.h"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}MyString.h"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}Rectangle.h"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}Constants.h"{}}}
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{class_line}{Line}}:\textcolor{keyword}{public} \mbox{\hyperlink{class_shape}{Shape}}}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{20 \textcolor{keyword}{private}:}
+\DoxyCodeLine{25     \mbox{\hyperlink{class_point}{Point}} begin;}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_point}{Point}} end;}
+\DoxyCodeLine{29     \mbox{\hyperlink{class_my_string}{MyString}} stroke;}
+\DoxyCodeLine{31     \textcolor{keywordtype}{unsigned} strokeWidth\{1\};}
+\DoxyCodeLine{33 \textcolor{keyword}{public}:}
+\DoxyCodeLine{35     \mbox{\hyperlink{class_line_a79268a50a5df21a7e4052e06b25ea0de}{Line}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{37     \mbox{\hyperlink{class_line_a79268a50a5df21a7e4052e06b25ea0de}{Line}}(\mbox{\hyperlink{class_point}{Point}} \_begin,\mbox{\hyperlink{class_point}{Point}} \_end,\mbox{\hyperlink{class_my_string}{MyString}} \_stroke,\textcolor{keywordtype}{unsigned} \_strokeWidth);}
+\DoxyCodeLine{39     \mbox{\hyperlink{class_line_af18447238883377a0071d2276a4ac0a5}{\string~Line}}()\textcolor{keyword}{ override }\{\}}
+\DoxyCodeLine{41     \mbox{\hyperlink{class_line}{Line}}* \mbox{\hyperlink{class_line_adc9e49bd356423a7b455b93513733bfc}{clone}}()\textcolor{keyword}{const override};}
+\DoxyCodeLine{43     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_line_a908b142ba4a17102326274ffcd83d3b4}{length}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{45     \mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_line_ab4862f5b47c3f4ccf1fb79cd92bb9575}{getBegin}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} begin; \}}
+\DoxyCodeLine{46     \textcolor{comment}{//return the ending point}}
+\DoxyCodeLine{47     \mbox{\hyperlink{class_point}{Point}} getEnd()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} end; \}}
+\DoxyCodeLine{49     \mbox{\hyperlink{class_my_string}{MyString}} \mbox{\hyperlink{class_line_a39440216d34441aadcf1a51e3a06502e}{getStroke}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} stroke; \}}
+\DoxyCodeLine{54     \textcolor{keywordtype}{void}  \mbox{\hyperlink{class_line_a3c455c98a0386baaec358256b0590d2a}{print}}(std::ostream\& = std::cout)\textcolor{keyword}{const override};}
+\DoxyCodeLine{56      \textcolor{keywordtype}{void} \mbox{\hyperlink{class_line_a2f5c01332375586f2a936d3672b40c0b}{println}}(std::ostream\& = std::cout)\textcolor{keyword}{const override};}
+\DoxyCodeLine{58      \textcolor{keywordtype}{void} \mbox{\hyperlink{class_line_a1a62d4fbc10235f04ca26e890a9271ce}{translate}}(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int}) \textcolor{keyword}{override};}
+\DoxyCodeLine{60      \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_line_a7a88506c38fcd0b73f9a076abce8c5fe}{withinRectangle}}(\mbox{\hyperlink{class_rectangle}{Rectangle}} \textcolor{keyword}{const}\& region)\textcolor{keyword}{const override};}
+\DoxyCodeLine{62      \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_line_a7477b69cc2683a2735222c0b5364acd6}{withinCircle}}(\mbox{\hyperlink{class_circle}{Circle}} \textcolor{keyword}{const}\& region)\textcolor{keyword}{const override};}
+\DoxyCodeLine{64      \textcolor{keywordtype}{void} \mbox{\hyperlink{class_line_ac725e645e6ed0166a16075ad2462936e}{readFromText}}(std::fstream\& in);}
+\DoxyCodeLine{66      \textcolor{keywordtype}{void} \mbox{\hyperlink{class_line_ab83d1a8c847deaa58569b893e74e0dbf}{writeToText}}(std::fstream\& out);}
+\DoxyCodeLine{68      ShapeType \mbox{\hyperlink{class_line_adf0e49781ed4acc34be3324562cf8f7b}{getType}}()\textcolor{keyword}{ const override }\{ \textcolor{keywordflow}{return} ShapeType::line; \}}
+\DoxyCodeLine{70      \mbox{\hyperlink{class_my_string}{MyString}} \mbox{\hyperlink{class_line_adc9112149c1c481b89b193b04d7db182}{getShape}}()\textcolor{keyword}{ const override }\{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}line"{}}; \}}
+\DoxyCodeLine{71 \};}
+\DoxyCodeLine{72 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74 }
+
+\end{DoxyCode}
